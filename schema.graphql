@@ -34,7 +34,7 @@ type DeleteTodoResult {
 
 type Mutation {
 	createTodo(description: String!, dueDate: String!): TodoResult!
-	deleteTodo(todoId: ID): DeleteTodoResult!
-	markDone(todoId: ID): TodoResult!
-	updateDueDate(todoId: ID, newDate: String!): TodoResult!
+	deleteTodo(todoId: ID!): DeleteTodoResult!
+	markDone(todoId: ID!): TodoResult!
+	updateDueDate(todoId: ID!, newDate: String!): TodoResult!
 }
